@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            .move{display:flex;
+            justify-content:center;
+        position: relative;}
+            div{position: absolute;}
+
+            #cantainer div{background-color: lightblue;
+            border: 1px solid black;
+        width: 100px;
+    height: 100px;
+opacity: 0.5;}
+            div#mybox{opacity: 1.0;
+            background-color: chocolate;
+        z-index: 1;
+    animation:  mymove 5s infinite linear;}
+
+    @keyframes mymove {50%{z-index: 5;}}
+        </style>
+    </head>
+<body>
+    <div class="move">
+
+        <div id="cantainer">
+            <div id="mybox">mybox</div>
+            <div style="top: 20px;left: 20px;z-index: 1;">z-index 1</div>
+            <div style="top: 40px;left: 40px;z-index: 2;">z-index 2</div>
+            <div style="top: 60px;left: 60px;z-index: 3;">z-index 3</div>
+            <div style="top: 80px;left: 80px;z-index: 4;">z-index 4</div>
+        </div>
+    </div>
+</body>
+</html>
